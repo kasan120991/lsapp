@@ -7,7 +7,7 @@
             <div class="card mb-3">
                 <h3 class="card-header"><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
                 <div class="card-body">
-                    <small class="text-muted">Written on {{$post->created_at}}</small>
+                    <small class="text-muted">Written on {{$post->created_at}} by {{$post->user->name}}</small>
                 </div>
             </div>
         @endforeach
